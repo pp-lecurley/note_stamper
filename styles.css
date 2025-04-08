@@ -1,0 +1,117 @@
+/* Import PayPal fonts */
+@font-face {
+    font-family: 'PayPalPro-Book';
+    src: url('paypal_font/PayPalPro-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PayPalPro-Bold';
+    src: url('paypal_font/PayPalPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PayPalPro-Black';
+    src: url('paypal_font/PayPalPro-Black.otf') format('opentype');
+}
+
+/* General site-wide font */
+body {
+    font-family: 'PayPalPro-Book', Arial, sans-serif; /* Primary site font */
+    font-size: 14px;
+    margin: 0;
+    padding: 20px; /* Add padding to create space from the edges */
+}
+
+/* General textarea styles */
+textarea {
+    font-family: 'PayPalPro-Book', Arial, sans-serif; /* Primary text font */
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none; /* Remove borders for all textareas */
+    background-color: #f9f9f9; /* Match the background color */
+    resize: none; /* Prevent resizing */
+}
+
+/* Specific styles for the output text */
+#output-area {
+    font-family: 'PayPalPro-Book', Arial, sans-serif; /* Output text font */
+    background-color: #f9f9f9; /* Ensure consistent background color */
+}
+
+/* Header styles */
+h2 {
+    font-family: 'PayPalPro-Black', Arial, sans-serif; /* Header font */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+    font-family: 'PayPalPro-Bold', Arial, sans-serif; /* Button text font */
+    font-size: 10 px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0070ba; /* PayPal blue */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #95caef; /* Darker PayPal blue */
+}
+
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray; /* Default color for sandbox */
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+/* The slider handle */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* When the checkbox is checked */
+.switch input:checked + .slider {
+    background-color: blue; /* Color for live */
+}
+
+/* Move the slider handle when checked */
+.switch input:checked + .slider:before {
+    transform: translateX(14px);
+}

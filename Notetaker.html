@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<h2>Notes for Salesforce:</h2>
+<textarea id="notes" placeholder="Enter your notes here" style="width: 100%; height: 100px; resize: none;"></textarea>
+<button id="copyButton" style="margin-top: 10px;">Copy to Clipboard</button>
+<button id="resetButton" style="margin-top: 10px;">Reset</button>
+<p id="formattedNotes" style="margin-top: 20px; font-weight: bold;"></p>
+<script src="notes.js" defer></script>
+<br>
+<h2>Create Tracking Links:</h2>
+<textarea id="tracking-input" placeholder="Enter Client ID and BN Code (one per line)" style="width: 100%; height: 100px; resize: none; border: none;"></textarea>
+<div style="margin-top: 10px;">
+    <label for="toggle-env">Environment:</label>
+    <label class="switch">
+        <input type="checkbox" id="toggle-env">
+        <span class="slider round"></span>
+    </label>
+</div>
+<button id="generate-btn" style="margin-top: 10px;">Generate</button>
+<button id="reset-btn" style="margin-top: 10px;">Reset</button>
+<p id="output-container" style="display: none; margin-top: 20px; font-weight: bold;">
+    <textarea id="output-area" readonly style="width: 100%; height: 100px; resize: none; border: none;"></textarea>
+</p>
+<button id="copy-btn" style="margin-top: 10px; display: none;">Copy to Clipboard</button>
+<script src="tracking.js" defer></script>
+<br><br>
+<h2>Decode/Encoder:</h2>
+<textarea id="encodedText" placeholder="Enter encoded text here" style="width: 100%; height: 100px; resize: none;"></textarea>
+<button id="encodeButton">Encode</button>
+<button id="decodeButton">Decode</button>
+<p id="decodedText" style="margin-top: 20px; font-weight: bold;"></p>
+<script src="decode-encode.js" defer></script>
